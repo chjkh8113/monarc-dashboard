@@ -12,6 +12,14 @@ export type ResolvedThemeMode = "light" | "dark";
 
 export const THEME_PRESET_OPTIONS = [
   {
+    label: "MONARC",
+    value: "monarc",
+    primary: {
+      light: "oklch(0.8 0.15 85)",
+      dark: "oklch(0.8 0.15 85)",
+    },
+  },
+  {
     label: "Default",
     value: "default",
     primary: {

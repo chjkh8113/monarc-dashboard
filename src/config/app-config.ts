@@ -3,12 +3,12 @@ import packageJson from "../../package.json";
 const currentYear = new Date().getFullYear();
 
 export const APP_CONFIG = {
-  name: "Studio Admin",
+  name: "MONARC",
   version: packageJson.version,
-  copyright: `© ${currentYear}, Studio Admin.`,
+  copyright: `© ${currentYear} MONARC. Empowered by Cloudinative`,
   meta: {
-    title: "Studio Admin - Modern Next.js Dashboard Starter Template",
+    title: "MONARC - Infrastructure Monitoring Dashboard",
     description:
-      "Studio Admin is a modern, open-source dashboard starter template built with Next.js 16, Tailwind CSS v4, and shadcn/ui. Perfect for SaaS apps, admin panels, and internal tools—fully customizable and production-ready.",
+      "MONARC is a modern infrastructure monitoring dashboard for tracking servers, services, network topology, and application performance in real-time.",
   },
 };
