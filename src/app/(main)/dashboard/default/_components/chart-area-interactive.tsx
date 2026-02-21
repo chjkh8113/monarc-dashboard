@@ -191,12 +191,12 @@ export function ChartAreaInteractive() {
           <AreaChart data={filteredData}>
             <defs>
               <linearGradient id="fillDesktop" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="var(--color-desktop)" stopOpacity={1.0} />
-                <stop offset="95%" stopColor="var(--color-desktop)" stopOpacity={0.1} />
+                <stop offset="5%" stopColor="hsl(142, 71%, 45%)" stopOpacity={1.0} />
+                <stop offset="95%" stopColor="hsl(142, 71%, 45%)" stopOpacity={0.1} />
               </linearGradient>
               <linearGradient id="fillMobile" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="var(--color-mobile)" stopOpacity={0.8} />
-                <stop offset="95%" stopColor="var(--color-mobile)" stopOpacity={0.1} />
+                <stop offset="5%" stopColor="hsl(45, 93%, 47%)" stopOpacity={0.8} />
+                <stop offset="95%" stopColor="hsl(45, 93%, 47%)" stopOpacity={0.1} />
               </linearGradient>
             </defs>
             <CartesianGrid vertical={false} />
@@ -229,8 +229,8 @@ export function ChartAreaInteractive() {
                 />
               }
             />
-            <Area dataKey="mobile" type="natural" fill="url(#fillMobile)" stroke="var(--color-mobile)" stackId="a" />
-            <Area dataKey="desktop" type="natural" fill="url(#fillDesktop)" stroke="var(--color-desktop)" stackId="a" />
+            <Area dataKey="mobile" type="natural" fill="url(#fillMobile)" stroke="hsl(45, 93%, 47%)" stackId="a" />
+            <Area dataKey="desktop" type="natural" fill="url(#fillDesktop)" stroke="hsl(142, 71%, 45%)" stackId="a" />
           </AreaChart>
         </ChartContainer>
       </CardContent>
