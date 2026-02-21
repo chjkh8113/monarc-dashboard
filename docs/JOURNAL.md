@@ -59,15 +59,36 @@ MONARC gaps identified:
 - Enhanced Card component with shadows, hover effects
 - Reorganized sidebar: reduced "Soon" items, added Dashboard submenu
 
-**Commit 3:** (pending) — Button + Stats cards
+**Commit 3:** `a615716` — Button + Stats cards
 - Button micro-interactions (hover lift, active press)
 - Stats cards: larger typography, colored badges, better hierarchy
 
+**Commit 4-6:** Chart fixes (ongoing)
+- Fixed invalid Tailwind class h-62 → h-[280px]
+- Changed CSS variables to HSL colors in gradients
+- **Issue:** SVG paths render in DOM but fills invisible
+
+### Chart Investigation
+
+The Recharts library creates correct SVG structure:
+- `<linearGradient>` definitions with HSL colors ✓
+- `<path>` elements with correct `d` attributes ✓
+- Container dimensions correct (718x280) ✓
+- `fill="url(#fillMobile)"` attribute present ✓
+
+BUT the visual fills don't appear. Same issue on CRM dashboard.
+Progress bars (CSS-based) work fine.
+
+Possible causes:
+- Recharts CSS compatibility with Tailwind v4
+- SVG gradient inheritance issue
+- Server-side rendering mismatch
+
 ### Next Steps
 
-1. Verify chart rendering on live site
-2. Add data table row hover effects
-3. Test responsive layout
+1. Consider replacing Recharts with Tremor or Chart.js
+2. Or use CSS-based chart alternatives
+3. Continue other UI improvements while chart is investigated
 
 ---
 
