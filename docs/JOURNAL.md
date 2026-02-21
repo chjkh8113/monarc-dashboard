@@ -49,12 +49,25 @@ MONARC gaps identified:
 
 ---
 
+### Implementation Progress
+
+**Commit 1:** `9f548cf` — Documentation
+- Added ARCHITECTURE.md, DESIGN-SYSTEM.md, TODO.md, JOURNAL.md
+- Updated README.md with MONARC branding
+
+**Commit 2:** `23581b9` — Card depth + Sidebar reorganization
+- Enhanced Card component with shadows, hover effects
+- Reorganized sidebar: reduced "Soon" items, added Dashboard submenu
+
+**Commit 3:** (pending) — Button + Stats cards
+- Button micro-interactions (hover lift, active press)
+- Stats cards: larger typography, colored badges, better hierarchy
+
 ### Next Steps
 
-1. Commit documentation to GitHub
-2. Begin P0 fixes (chart, Soon badges)
-3. Implement design token updates in globals.css
-4. Create enhanced StatsCard component
+1. Verify chart rendering on live site
+2. Add data table row hover effects
+3. Test responsive layout
 
 ---
 
