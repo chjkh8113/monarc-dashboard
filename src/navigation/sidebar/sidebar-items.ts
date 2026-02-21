@@ -1,28 +1,19 @@
 import {
-  Activity,
-  AlertTriangle,
   BarChart3,
   Bell,
   BookOpen,
-  Box,
   Briefcase,
-  Cloud,
   Code2,
-  Database,
   FileText,
-  Gauge,
-  Globe,
-  HardDrive,
   type LucideIcon,
   LayoutDashboard,
   Network,
   Router,
   Server,
-  Settings,
-  Shield,
   Terminal,
+  TrendingUp,
+  Wallet,
   Users,
-  Workflow,
 } from "lucide-react";
 
 export interface NavSubItem {
@@ -59,6 +50,11 @@ export const sidebarItems: NavGroup[] = [
         title: "Dashboard",
         url: "/dashboard/default",
         icon: LayoutDashboard,
+        subItems: [
+          { title: "Overview", url: "/dashboard/default" },
+          { title: "CRM", url: "/dashboard/crm" },
+          { title: "Finance", url: "/dashboard/finance" },
+        ],
       },
       {
         title: "Reports",
@@ -106,49 +102,19 @@ export const sidebarItems: NavGroup[] = [
   },
   {
     id: 3,
-    label: "",
+    label: "Tools",
     items: [
       {
         title: "Analytics",
         url: "/dashboard/coming-soon",
         icon: BarChart3,
         comingSoon: true,
-        subItems: [
-          { title: "Performance", url: "/dashboard/coming-soon", comingSoon: true },
-          { title: "Trends", url: "/dashboard/coming-soon", comingSoon: true },
-          { title: "Capacity", url: "/dashboard/coming-soon", comingSoon: true },
-        ],
       },
       {
-        title: "Business",
-        url: "/dashboard/coming-soon",
-        icon: Briefcase,
-        comingSoon: true,
-        subItems: [
-          { title: "SLA Reports", url: "/dashboard/coming-soon", comingSoon: true },
-          { title: "Cost Analysis", url: "/dashboard/coming-soon", comingSoon: true },
-        ],
-      },
-      {
-        title: "Developer Kit",
-        url: "/dashboard/coming-soon",
-        icon: Code2,
-        comingSoon: true,
-        subItems: [
-          { title: "API Docs", url: "/dashboard/coming-soon", comingSoon: true },
-          { title: "Webhooks", url: "/dashboard/coming-soon", comingSoon: true },
-          { title: "Integrations", url: "/dashboard/coming-soon", comingSoon: true },
-        ],
-      },
-      {
-        title: "Knowledge",
+        title: "Knowledge Base",
         url: "/dashboard/coming-soon",
         icon: BookOpen,
         comingSoon: true,
-        subItems: [
-          { title: "Runbooks", url: "/dashboard/coming-soon", comingSoon: true },
-          { title: "Documentation", url: "/dashboard/coming-soon", comingSoon: true },
-        ],
       },
     ],
   },
