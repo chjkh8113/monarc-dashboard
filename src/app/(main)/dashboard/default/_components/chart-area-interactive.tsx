@@ -112,11 +112,11 @@ const chartConfig = {
   },
   desktop: {
     label: "Desktop",
-    color: "var(--chart-1)",
+    color: "hsl(142, 71%, 45%)", // Green - matches MONARC chart-1
   },
   mobile: {
-    label: "Mobile",
-    color: "var(--chart-2)",
+    label: "Mobile", 
+    color: "hsl(45, 93%, 47%)", // Gold - matches MONARC chart-2
   },
 } satisfies ChartConfig;
 
